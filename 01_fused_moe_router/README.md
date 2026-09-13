@@ -15,5 +15,7 @@ This implementation collapses the gating operations into a **single-pass fused h
 
 The kernel was profiled using `triton.testing.do_bench` across scaling token batch sizes (Dimension M) on a live NVIDIA GPU instance. 
 
+![MoE Router Benchmark](./Fused-MoE-vs-Unfused-baselines.png)
+
 - **Maximum Acceleration:** Achieved up to a **4x speedup** in memory-bound execution zones (low batch footprints).
 - **Throughput Scaling:** Maintained an average **~1.8x execution latency reduction** over the optimized native PyTorch baseline at a batch size of 2,048 tokens.
