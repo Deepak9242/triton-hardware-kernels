@@ -83,7 +83,7 @@ if __name__ == "__main__":
         exit()
         
     device = "cuda"
-    batch_sizes = [128, 256, 512, 1024, 2048]
+    batch_sizes = [128, 256, 512, 1024, 2048, 4096]
     py_times = []
     tri_times = []
     
